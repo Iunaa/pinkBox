@@ -5,9 +5,10 @@
     letter-spacing: 1.92px;
     margin-bottom: 20px;
 
-    @media (min-width: 768px){
+    @media (min-width: 768px) {
         font-size: 20px;
         font-weight: 700;
         letter-spacing: 2.4px;
+        margin-bottom: 15px;
     }
 }

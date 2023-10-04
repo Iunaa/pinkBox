@@ -7,6 +7,15 @@
         margin-left: 62px;
     }
 
+
+    @media (min-width: 835px){
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        margin-bottom: 47px;
+        margin-left: 80px;
+
+    }
+
     &__menuitem {
         display: flex;
         max-width: fit-content;
@@ -21,6 +30,10 @@
 
     &__element {
         padding-bottom: 20px;
+
+        @media (min-width: 768px){
+            padding-bottom: 10px;
+        }
 
         
     }

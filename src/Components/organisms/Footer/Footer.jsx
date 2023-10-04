@@ -7,12 +7,16 @@ import SocialMedia from "../../molecules/SocialMedia/SocialMedia";
 export default function Footer() {
     return (
         <footer className={Styles.footer}>
-            <div className={Styles.content}>
-                <img className={Styles.content__logo} src={Logo} />
-                <p className={Styles.content__title}>Upbox</p>
-                <SocialMedia/>
+            <div className={Styles.footer__footertop}>
+                <div className={Styles.content}>
+                    <div className={Styles.content__logotitle}>
+                        <img className={Styles.content__logo} src={Logo} />
+                        <p className={Styles.content__title}>Upbox</p>
+                    </div>
+                    <SocialMedia />
+                </div>
+                <MenuList />
             </div>
-            <MenuList />
 
             <hr className={Styles.footer__hr} />
             <div className={Styles.footer__terms}>

@@ -3,6 +3,19 @@
     border-radius: 7px;
     min-height: 767.103px;
 
+    @media (min-width: 768px) {
+        min-height: 500px;
+    }
+
+    @media (min-width: 1440px) {
+        min-height: 479px;
+    }
+
+    &__footertop {
+        max-width: 1393px;
+        margin: 0 auto;
+    }
+
     .content {
         display: flex;
 
@@ -11,8 +24,23 @@
         gap: 20px;
 
         @media (min-width: 768px) {
-            margin-left: 62px;
-            
+            margin-left: 82px;
+            justify-content: space-between;
+            gap: 10px;
+        }
+        @media (min-width: 1440px) {
+            display: flex;
+            justify-content: space-between;
+            padding-top: 44px;
+            padding-left: 120px;
+            gap: 170px;
+            margin: auto;
+        }
+
+        &__logotitle {
+            display: flex;
+            align-items: center;
+            gap: 10px;
         }
 
         &__logo {
@@ -22,7 +50,7 @@
             font-size: 25px;
             letter-spacing: 5px;
             color: black;
-            font-weight: 500;
+            font-weight: 600;
             text-transform: uppercase;
         }
     }
@@ -41,6 +69,12 @@
             flex-direction: row;
             align-items: baseline;
             gap: 36px;
+        }
+
+        @media (min-width: 1440px) {
+            display: flex;
+            justify-content: flex-end;
+            margin-right: 95px;
         }
     }
 
@@ -76,6 +110,10 @@
             font-size: 14px;
             letter-spacing: 1.68px;
             max-width: 549px;
+        }
+
+        @media (min-width: 1440px) {
+            display: none;
         }
     }
 }

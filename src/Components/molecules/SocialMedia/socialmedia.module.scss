@@ -1,0 +1,9 @@
+.SocialMedia {
+    display: none;
+    gap: 31px;
+
+   @media (min-width: 768px){
+    display: flex;
+    margin-left: 165px;
+   } 
+}

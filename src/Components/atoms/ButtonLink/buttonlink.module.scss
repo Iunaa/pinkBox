@@ -1,0 +1,24 @@
+.link {
+    font-family: "DM Sans";
+        font-size: 10px;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: 1.2px;
+        text-transform: uppercase;
+        color: rgba(0, 0, 0, 1);
+
+        @media(min-width: 1440px){
+            font-size: 14px;
+            letter-spacing: 1.68px;
+        }
+    &__anchor {
+        
+        border: 1px solid black;
+        border-radius: 30px;
+        padding: 5px  19px;
+
+        @media(min-width: 1440px){
+        padding: 5px  24px;
+    }
+    }
+}

@@ -1,0 +1,27 @@
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    
+    @media (min-width: 768px){
+        margin-left: 62px;
+    }
+
+    &__menuitem {
+        display: flex;
+        max-width: fit-content;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin-bottom: 11px;
+        margin-left: 34px;
+        margin-top: 37px;
+        margin-right: 10px;
+    }
+
+    &__element {
+        padding-bottom: 20px;
+
+        
+    }
+}

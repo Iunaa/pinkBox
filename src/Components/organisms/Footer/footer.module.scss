@@ -1,0 +1,81 @@
+.footer {
+    border: 2px solid #e2e2e2;
+    border-radius: 7px;
+    min-height: 767.103px;
+
+    .content {
+        display: flex;
+
+        align-items: center;
+        padding: 16px 134px 18px 15px;
+        gap: 20px;
+
+        @media (min-width: 768px) {
+            margin-left: 62px;
+            
+        }
+
+        &__logo {
+            max-width: 35px;
+        }
+        &__title {
+            font-size: 25px;
+            letter-spacing: 5px;
+            color: black;
+            font-weight: 500;
+            text-transform: uppercase;
+        }
+    }
+    &__hr {
+        border: 2px solid #c4c4c4;
+        opacity: 0.3;
+    }
+
+    &__terms {
+        display: flex;
+        flex-direction: column;
+        margin-left: 34px;
+
+        @media (min-width: 768px) {
+            margin-left: 92px;
+            flex-direction: row;
+            align-items: baseline;
+            gap: 36px;
+        }
+    }
+
+    &__subtile {
+        font-size: 14px;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: 1.68px;
+        margin-top: 22px;
+    }
+
+    &__privacy {
+        font-size: 14px;
+        line-height: normal;
+        font-weight: 500;
+        letter-spacing: 1.68px;
+        margin-top: 15px;
+        margin-bottom: 12px;
+    }
+
+    &__paragraph {
+        font-size: 11px;
+        color: black;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: 1.32px;
+        margin-top: 12px;
+        margin-bottom: 30px;
+        margin-left: 34px;
+
+        @media (min-width: 768px) {
+            margin-left: 92px;
+            font-size: 14px;
+            letter-spacing: 1.68px;
+            max-width: 549px;
+        }
+    }
+}

@@ -7,10 +7,10 @@ import snapchat from "../../../assets/img/sc.png";
 export default function SocialMedia(){
     return (
         <div className={Style.SocialMedia}>
-            <img src={instagram} />
-            <img src={facebook} />
-            <img src={twitter} />
-            <img src={snapchat} />
+            <img className={Style.SocialMedia__icons} src={instagram} />
+            <img className={Style.SocialMedia__icons} src={facebook} />
+            <img className={Style.SocialMedia__icons} src={twitter} />
+            <img className={Style.SocialMedia__icons} src={snapchat} />
         </div>
     );
 }

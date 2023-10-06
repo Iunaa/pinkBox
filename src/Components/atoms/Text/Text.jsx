@@ -1,10 +1,8 @@
-import Style from "./text.module.scss"
-
+import Styles from "./text.module.scss";
 
 export default function Text(props) {
-    return(
-        
-            <span className={Style.text}>{props.text}</span>
-        
-    )
+    const TextClass = `${Styles.text} ${
+        props.large ? Styles["text--large"] : ""
+    }`;
+    return <span className={TextClass}>{props.text}</span>;
 }

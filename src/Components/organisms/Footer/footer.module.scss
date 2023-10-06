@@ -62,10 +62,10 @@
     &__terms {
         display: flex;
         flex-direction: column;
-        margin-left: 34px;
+        padding-left: 34px;
 
         @media (min-width: 768px) {
-            margin-left: 92px;
+            margin-left: 62px;
             flex-direction: row;
             align-items: baseline;
             gap: 36px;
@@ -75,6 +75,8 @@
             display: flex;
             justify-content: flex-end;
             margin-right: 95px;
+            max-width: 1206px;
+            margin: 0 auto;
         }
     }
 

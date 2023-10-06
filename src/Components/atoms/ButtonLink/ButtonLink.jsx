@@ -1,7 +1,7 @@
 import React from 'react'
 import Styles from "../ButtonLink/buttonlink.module.scss"
 
-export default function Button (props){
+export default function ButtonLink (props){
 
     
     return (

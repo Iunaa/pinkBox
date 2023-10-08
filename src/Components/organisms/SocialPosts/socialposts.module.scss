@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text&display=swap');
+
+.container {
+    padding: 0 32px;
+    margin-bottom: 20px;
+    background-color: #f5f8ff;
+    height: 2642px;
+}
+
+.content {
+    margin-bottom: 130px;
+
+    &__title {
+        font-size: 48px;
+        font-family: DM Serif Text;
+        font-weight: 400;
+        color: #000000;
+        line-height: 56px;
+        margin-top: 57px;
+        margin-bottom: 33px;
+        text-align: center;
+    }
+}

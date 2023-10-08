@@ -1,0 +1,16 @@
+.link {
+    &__anchor {
+        font-family: "DM Sans";
+        font-size: 16px;
+        color: white;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: 1.92px;
+        text-transform: uppercase;
+        border: 1px solid transparent;
+        border-radius: 30px;
+        background-color: #ef8094;
+        padding: 15px 19px;
+        color: white;
+    }
+}

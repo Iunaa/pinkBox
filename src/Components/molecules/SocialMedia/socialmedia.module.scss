@@ -1,0 +1,19 @@
+.SocialMedia {
+    display: none;
+    gap: 31px;
+    cursor: pointer;
+
+    @media (min-width: 768px) {
+        display: flex;
+        margin-left: 165px;
+    }
+
+    @media (min-width: 1440px) {
+        padding-left: 653px;
+        margin: 0 auto;
+    }
+
+    &__icons{
+      border-radius: 5px;
+    }
+}

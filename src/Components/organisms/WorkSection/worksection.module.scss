@@ -1,0 +1,69 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    padding-top: 90px;
+
+    
+
+    &__underline {
+        max-width: 310px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    &__titleUnderline {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 30px;
+    }
+
+    &__allCards {
+        padding-bottom: 55px;
+        margin: 0 auto;
+        max-width: 375px;
+
+        @media (min-width: $mdBreakpoint) {
+            max-width: 768px;
+        }
+        @media (min-width: $xlBreakpoint) {
+            max-width: 1270px;
+            padding-bottom: 115px;
+        }
+    }
+
+    &__Card {
+        display: flex;
+        flex-direction: column;
+
+        @media (min-width: $xlBreakpoint) {
+            flex-direction: row;
+        }
+    }
+
+    &__Card2 {
+        display: flex;
+        flex-direction: column;
+
+        @media (min-width: $xlBreakpoint) {
+            flex-direction: row;
+        }
+
+        @media (min-width: $xlBreakpoint) {
+            justify-content: flex-end;
+        }
+    }
+
+    &__btnLink {
+        padding: 15px 29px 15px 29px;
+        margin-bottom: 130px;
+
+        @media (min-width: $mdBreakpoint) {
+            padding: 14px 32px 14px 32px;
+        }
+
+        @media (min-width: $xlBreakpoint) {
+            padding: 18px 35px 18px 35px;
+        }
+    }
+}

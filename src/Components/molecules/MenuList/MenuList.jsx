@@ -1,85 +1,129 @@
-import Title from "../../atoms/Title/Title";
-import Text from "../../atoms/Text/Text";
-import styles from "./menulist.module.scss";
+
+import SectionText from "../../atoms/SectionText/SectionText";
+import Styles from "./menulist.module.scss";
+import TitleList from "../../atoms/TitleList/TitleList";
 
 export default function MenuList() {
     return (
-        <div className={styles.container}>
-            <div className={styles.container__menuitem}>
-                <Title text={"UPBOX"} />
+        <div className={Styles.container}>
+            <div className={Styles.container__menuitem}>
+                <TitleList title={"UPBOX"} />
                 <ul>
-                    <li className={styles.container__element}>
-                        <Text text={"Upbox Bag"} />
+                    <li
+                        className={`${Styles.container__element} typography--list`}
+                    >
+                        <SectionText text={"Upbox Bag"} />
                     </li>
-                    <li className={styles.container__element}>
-                        <Text text={"Upbox Box Platinum"} />
+                    <li
+                        className={`${Styles.container__element} typography--list`}
+                    >
+                        <SectionText text={"Upbox Box Platinum"} />
                     </li>
-                    <li className={styles.container__element}>
-                        <Text text={"Upbox Box VIP"} />
+                    <li
+                        className={`${Styles.container__element} typography--list`}
+                    >
+                        <SectionText text={"Upbox Box VIP"} />
                     </li>
-                    <li className={styles.container__element}>
-                        <Text text={"Deals"} />
+                    <li
+                        className={`${Styles.container__element} typography--list`}
+                    >
+                        <SectionText text={"Deals"} />
                     </li>
-                    <li className={styles.container__element}>
-                        <Text text={"Seasonal Items"} />
+                    <li
+                        className={`${Styles.container__element} typography--list`}
+                    >
+                        <SectionText text={"Seasonal Items"} />
                     </li>
-                    <li className={styles.container__element}>
-                        <Text text={"Upbox Promise"} />
+                    <li
+                        className={`${Styles.container__element} typography--list`}
+                    >
+                        <SectionText text={"Upbox Promise"} />
                     </li>
                 </ul>
             </div>
 
-            <div className={styles.container__menuitem}>
-                <Title text={"Product"} />
+            <div className={Styles.container__menuitem}>
+                <TitleList title={"Product"} />
                 <ul>
-                    <li className={styles.container__element}>
-                        <Text text={"Get the App"} />
+                    <li
+                        className={`${Styles.container__element} typography--list`}
+                    >
+                        <SectionText text={"Get the App"} />
                     </li>
-                    <li className={styles.container__element}>
-                        <Text text={"Loyalty Program"} />
+                    <li
+                        className={`${Styles.container__element} typography--list`}
+                    >
+                        <SectionText text={"Loyalty Program"} />
                     </li>
-                    <li className={styles.container__element}>
-                        <Text text={"Affiliates"} />
+                    <li
+                        className={`${Styles.container__element} typography--list`}
+                    >
+                        <SectionText text={"Affiliates"} />
                     </li>
-                    <li className={styles.container__element}>
-                        <Text text={"Press"} />
+                    <li
+                        className={`${Styles.container__element} typography--list`}
+                    >
+                        <SectionText text={"Press"} />
                     </li>
                 </ul>
             </div>
-            <div className={styles.container__menuitem}>
-                <Title text={"Find Us On"} />
+            <div className={Styles.container__menuitem}>
+                <TitleList title={"Find Us On"} />
                 <ul>
-                    <li className={styles.container__element}>
-                        <Text text={"Instagram"} />
+                    <li
+                        className={`${Styles.container__element} typography--list`}
+                    >
+                        <SectionText text={"Instagram"} />
                     </li>
-                    <li className={styles.container__element}>
-                        <Text text={"Facebook"} />
+                    <li
+                        className={`${Styles.container__element} typography--list`}
+                    >
+                        <SectionText text={"Facebook"} />
                     </li>
-                    <li className={styles.container__element}>
-                        <Text text={"TikTok"} />
+                    <li
+                        className={`${Styles.container__element} typography--list`}
+                    >
+                        <SectionText text={"TikTok"} />
                     </li>
-                    <li className={styles.container__element}>
-                        <Text text={"SnapChat"} />
+                    <li
+                        className={`${Styles.container__element} typography--list`}
+                    >
+                        <SectionText text={"SnapChat"} />
                     </li>
-                    <li className={styles.container__element}>
-                        <Text text={"Twitter"} />
+                    <li
+                        className={`${Styles.container__element} typography--list`}
+                    >
+                        <SectionText text={"Twitter"} />
                     </li>
                 </ul>
             </div>
-            <div className={styles.container__menuitem}>
-                <Title text={"Help"} />
+            <div className={Styles.container__menuitem}>
+                <TitleList title={"Help"} />
                 <ul>
-                    <li className={styles.container__element}>
-                        <Text text={"FAQ"} />
+                    <li
+                        className={`${Styles.container__element} typography--list`}
+                    >
+                        <SectionText text={"Returns"} />
                     </li>
-                    <li className={styles.container__element}>
-                        <Text text={"Contact"} />
+                    <li
+                        className={`${Styles.container__element} typography--list`}
+                    >
+                        <SectionText text={"FAQ"} />
                     </li>
-                    <li className={styles.container__element}>
-                        <Text text={"Community"} />
+                    <li
+                        className={`${Styles.container__element} typography--list`}
+                    >
+                        <SectionText text={"Contact"} />
                     </li>
-                    <li className={styles.container__element}>
-                        <Text text={"Videos"} />
+                    <li
+                        className={`${Styles.container__element} typography--list`}
+                    >
+                        <SectionText text={"Community"} />
+                    </li>
+                    <li
+                        className={`${Styles.container__element} typography--list`}
+                    >
+                        <SectionText text={"Videos"} />
                     </li>
                 </ul>
             </div>

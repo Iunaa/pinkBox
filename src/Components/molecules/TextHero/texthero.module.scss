@@ -1,0 +1,46 @@
+.container {
+    height: 845px;
+    padding-left: 42px;
+    padding-right: 39px;
+    margin: 0 auto;
+    width: 100%;
+
+    @media (min-width: $mdBreakpoint) {
+        padding-left: 12px;
+    }
+    @media (min-width: $xlBreakpoint) {
+        padding-left: 22px;
+    }
+    &__title {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 18px;
+        white-space: pre-line;
+
+        @media (min-width: $mdBreakpoint) {
+            width: 18ch;
+        }
+
+        @media (min-width: $xlBreakpoint) {
+            max-width: 511px;
+        }
+    }
+
+    &__paragraph {
+        display: flex;
+        flex-direction: row;
+        padding-bottom: 14px;
+        max-width: 443px;
+        text-align: justify;
+        padding-bottom: 60px;
+
+        white-space: pre-line;
+    }
+
+    @media (min-width: $mdBreakpoint) {
+        max-width: 362px;
+    }
+    @media (min-width: $xlBreakpoint) {
+        max-width: 653px;
+    }
+}

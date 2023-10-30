@@ -1,0 +1,299 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&family=DM+Serif+Text&display=swap");
+@import "./breakpoints";
+
+.typography {
+    &--p {
+        font-family: "DM Sans";
+        font-size: 18px;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 0.18px;
+        @media (min-width: $mdBreakpoint) {
+            font-size: 14px;
+            letter-spacing: 0.14px;
+        }
+        @media (min-width: $xlBreakpoint) {
+            font-size: 18px;
+        }
+    }
+
+    &--copy {
+        font-family: "DM Sans";
+        font-size: 11px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: 1.32px;
+
+        @media (min-width: $mdBreakpoint) {
+            font-size: 14px;
+            letter-spacing: 1.68px;
+        }
+    }
+
+    &--list {
+        font-family: "DM Sans";
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: 0.84px;
+
+        @media (min-width: $mdBreakpoint) {
+            font-size: 14px;
+            letter-spacing: 1.68px;
+        }
+    }
+
+    &--h1 {
+        font-family: "DM Serif Text";
+        font-size: 48px;
+        font-weight: 400;
+        font-style: normal;
+        line-height: 56px;
+
+        @media (min-width: $mdBreakpoint) {
+            font-size: 42px;
+            line-height: 48px;
+        }
+
+        @media (min-width: $xlBreakpoint) {
+            font-size: 48px;
+            line-height: 56px;
+        }
+    }
+
+    &--h2 {
+        font-family: "DM Serif Text";
+        font-size: 48px;
+        font-weight: 400;
+        font-style: normal;
+        line-height: 56px;
+
+        @media (min-width: $mdBreakpoint) {
+            font-size: 42px;
+            line-height: 48px;
+        }
+        @media (min-width: $xlBreakpoint) {
+            font-size: 48px;
+            line-height: 56px;
+        }
+    }
+
+    &--h3 {
+        font-family: "DM Sans";
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 44px;
+    }
+
+    &--h3font {
+        font-family: "DM Serif Text";
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 44px;
+        letter-spacing: -0.36px;
+
+        @media (min-width: $mdBreakpoint) {
+            font-size: 32px;
+            line-height: 36px;
+        }
+
+        @media (min-width: $xlBreakpoint) {
+            font-size: 36px;
+            line-height: 44px;
+        }
+    }
+
+    &--h4 {
+        font-family: "DM Sans";
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 0.14px;
+    }
+
+    &--a {
+        font-family: "DM Sans";
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: 1.68px;
+        color: var(--color--black);
+
+        @media (min-width: $mdBreakpoint) {
+            font-size: 14px;
+            letter-spacing: 1.68px;
+        }
+
+        @media (min-width: $xlBreakpoint) {
+            font-size: 14px;
+            letter-spacing: 1.68px;
+        }
+    }
+
+    &--paragraph {
+        font-family: "DM Sans";
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: 0.14px;
+        color: var(--color--black);
+
+        @media (min-width: $xlBreakpoint) {
+            font-size: 18px;
+            letter-spacing: 0.18px;
+        }
+    }
+
+    &--span {
+        font-family: "DM Serif Text";
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+
+        @media (min-width: $mdBreakpoint) {
+            font-size: 28px;
+        }
+
+        @media (min-width: $xlBreakpoint) {
+            font-size: 36px;
+        }
+    }
+
+    &--spanfont {
+        font-family: "DM Sans";
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 3.6px;
+
+        @media (min-width: $mdBreakpoint) {
+            font-size: 24px;
+            letter-spacing: 2.88px;
+        }
+
+        @media (min-width: $xlBreakpoint) {
+            font-size: 44px;
+            letter-spacing: 5.28px;
+        }
+    }
+
+    &--select{
+       font-family: "DM Sans"; 
+       font-size: 14px;
+       font-style: normal;
+       font-weight: 500;
+    }
+
+    &--label{
+       font-family: "DM Sans";  
+       font-size: 18px;
+       font-style: normal;
+       font-weight: 500;
+       color: var(--color--pink);
+    }
+
+    &--txt1 {
+        font-family: "DM Sans";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 1.92px;
+
+        @media (min-width: $mdBreakpoint) {
+            font-size: 20px;
+            font-weight: 700;
+            letter-spacing: 2.4px;
+        }
+    }
+
+    &--txt2 {
+        font-family: "DM Sans";
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 0.22px;
+    }
+
+    &--textBtn {
+        font-family: "DM Sans";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 1.92px;
+
+        @media (min-width: $mdBreakpoint) {
+            font-size: 14px;
+            letter-spacing: 1.68px;
+        }
+
+        @media (min-width: $xlBreakpoint) {
+            font-size: 16px;
+            letter-spacing: 1.92px;
+        }
+    }
+
+    &--headerBtn {
+        font-family: "DM Sans";
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 500;
+        letter-spacing: 1.2px;
+
+        @media (min-width: $xlBreakpoint) {
+            font-size: 14px;
+            letter-spacing: 1.68px;
+        }
+    }
+
+    &--btnPink {
+        font-family: "DM Sans";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 1.92px;
+        text-align: center;
+    }
+
+    &--btnPinkBorder {
+        font-family: "DM Sans";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 1.92px;
+
+        @media (min-width: $mdBreakpoint) {
+            font-size: 12px;
+            letter-spacing: 1.44px;
+        }
+
+        @media (min-width: $xlBreakpoint) {
+            font-size: 16px;
+            letter-spacing: 1.92px;
+        }
+    }
+
+    &--btn {
+        font-family: "DM Sans";
+        font-size: 10px;
+        font-weight: 500;
+        line-height: normal;
+        @media (min-width: $xlBreakpoint) {
+            font-size: 14px;
+            letter-spacing: 1.68px;
+        }
+    }
+}

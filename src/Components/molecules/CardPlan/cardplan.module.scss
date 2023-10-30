@@ -1,0 +1,23 @@
+.CardPlan {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 28px;
+
+    @media (min-width: $xlBreakpoint) {
+        padding-top: 50px;
+    }
+
+    &--pink {
+        width: 100%;
+        background-image: url(../../../assets/img/Vector.png);
+        background-size: cover;
+        background-repeat: repeat;
+    }
+
+    &--blue {
+        width: 100%;
+        background-image: url(../../../assets/img/Vector2.png);
+        background-size: cover;
+    }
+}

@@ -1,5 +1,5 @@
 import Styles from "./socialimages.module.scss";
-import Images from "../../atoms/Cards/Cards";
+import Images from "../../atoms/Images/Images";
 import Text from "../../atoms/Text/Text";
 import img1 from "../../../assets/img/img1.png"
 import img2 from "../../../assets/img/img2.png";

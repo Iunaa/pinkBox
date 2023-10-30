@@ -7,7 +7,7 @@ export default function SocialPosts(){
     return (
         <section className={Styles.container}>
             <div className={Styles.content}>
-                <h2 className={Styles.content__title}>Social Posts</h2>
+                <Title text={"Social Posts"} />
                 <SocialImages />
             </div>
             <ButtonLinkColor label={"Follow us on Instagram"} />

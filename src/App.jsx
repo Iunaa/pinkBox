@@ -11,7 +11,7 @@ function App() {
   return (
       <div className="container">
           <Header />
-          <SocialPosts/>
+          {/* <SocialPosts/> */}
           <div className="container--grey">
               <Footer />
           </div>

@@ -1,19 +1,25 @@
 .container {
     display: grid;
+    grid-template-areas:
+        "Upbox Product"
+        "FindUsOn Help";
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    
-    @media (min-width: 768px){
-        margin-left: 62px;
+    margin-top: 37px;
+    gap: 20px;
+
+    @media (min-width: $mdBreakpoint) {
+        padding-top: 13px;
+        column-gap: 70px;
+
+        grid-template-areas:
+            "Upbox FindUsOn"
+            "Product Help";
     }
 
-
-    @media (min-width: 835px){
+    @media (min-width: $xlBreakpoint) {
         grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(1, 1fr);
         margin-bottom: 47px;
-        margin-left: 80px;
-
+        grid-template-areas: "Upbox FindUsOn Product Help";
     }
 
     &__menuitem {
@@ -22,19 +28,31 @@
         flex-direction: column;
         justify-content: flex-start;
         align-items: flex-start;
-        margin-bottom: 11px;
-        margin-left: 34px;
-        margin-top: 37px;
-        margin-right: 10px;
+        margin-bottom: 24px;
+
+        cursor: pointer;
+    }
+    &__menuitem:first-child {
+        grid-area: Upbox;
+    }
+
+    &__menuitem:nth-child(2) {
+        grid-area: Product;
+    }
+
+    &__menuitem:nth-child(3) {
+        grid-area: FindUsOn;
+    }
+
+    &__menuitem:nth-child(4) {
+        grid-area: Help;
     }
 
     &__element {
-        padding-bottom: 20px;
+        padding-bottom: 10px;
 
-        @media (min-width: 768px){
+        @media (min-width: $mdBreakpoint) {
             padding-bottom: 10px;
         }
-
-        
     }
 }

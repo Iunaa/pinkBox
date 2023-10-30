@@ -1,0 +1,20 @@
+.titleList{
+    font-family: "DM Sans";
+    color: var(--color--black);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.92px;
+    padding-bottom: 12px;
+
+    @media (min-width: $mdBreakpoint){
+        font-size: 20px;
+        letter-spacing: 2.4px;
+    }
+
+    @media (min-width: $xlBreakpoint){
+        font-size: 20px;
+        letter-spacing: 2.4px;
+    }
+}

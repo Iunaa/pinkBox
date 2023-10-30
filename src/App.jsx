@@ -1,20 +1,23 @@
-import "./Components/_base/reset.scss"
-import "./Components/_base/_global.scss"
-
-import Header from './Components/organisms/Header/Header'
-import Footer from "./Components/organisms/Footer/Footer"
-import SocialPosts from "./Components/organisms/SocialPosts/SocialPosts";
+import "./Components/_base/_index.scss";
+import Header from "./Components/organisms/Header/Header";
+import Footer from "./Components/organisms/Footer/Footer";
+import { Route, Routes } from "react-router-dom";
+import Preferences from "./Pages/Preferences";
+import Home from "./Home";
 
 function App() {
-  
+    return (
+        <div className="container">
+            <Header />
+            <Routes>
+                <Route exact path="/" element={<Home />} index />
+                <Route exact path="/preferences" element={<Preferences />} />
+            </Routes>
 
-  return (
-      <div className="container">
-          <Header />
-          {/* <SocialPosts/> */}
-          <div className="container--grey">
-              <Footer />
-          </div>
-      </div>
-  );}
-export default App
+            <div className="container--grey">
+                <Footer />
+            </div>
+        </div>
+    );
+}
+export default App;

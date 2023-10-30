@@ -1,0 +1,36 @@
+.BoxHero {
+    background-color: var(--color--grey);
+
+    .content {
+        background-image: url(../../../assets/img/BOX.png);
+        background-repeat: no-repeat;
+        background-size: 490px;
+        background-position: 100% 110%;
+        padding-top: 46px;
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        max-width: 375px;
+
+        @media (min-width: $mdBreakpoint) {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            padding-left: 20px;
+            padding-top: 18px;
+            height: 474px;
+            background-size: 650px;
+            background-position: 120% 580%;
+            max-width: 800px;
+        }
+
+        @media (min-width: $xlBreakpoint) {
+            background-image: url(../../../assets/img/boxDesktop.png);
+            padding-left: 61px;
+            padding-top: 75px;
+            height: 545px;
+            background-size: 919px;
+            background-position: 100% 100%;
+            max-width: 1440px;
+        }
+    }
+}

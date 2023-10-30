@@ -1,0 +1,25 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    align-items: center;
+
+    &__title {
+        color: var(--color--pink);
+        text-align: center;
+        padding-bottom: 30px;
+    }
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0 auto;
+    padding-bottom: 40px;
+    gap: 10px;
+
+    @media (max-width: 337px) {
+        flex-direction: column;
+    }
+}

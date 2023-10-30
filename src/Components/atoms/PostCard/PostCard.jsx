@@ -1,5 +1,5 @@
 import Styles from "./postcard.module.scss";
-import FavoriteButton from "../FavoriteCard/FavoriteButton";
+import FavoriteButton from "../FavoriteButton/FavoriteButton";
 
 export default function PostCard(props) {
 

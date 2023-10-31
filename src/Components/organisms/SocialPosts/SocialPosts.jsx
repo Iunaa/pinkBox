@@ -5,16 +5,16 @@ import img3 from "../../../assets/img/img3.png";
 import img4 from "../../../assets/img/img4.png";
 import SocialCard from "../../molecules/SocialCard/SocialCard";
 import Styles from "./socialposts.module.scss";
-import { AiFillHeart, AiOutlineHeart } from "react-icons/ai";
 
-export default function SocialPosts({ favorite }) {
-    {
-        favorite ? (
-            <AiFillHeart color="#EE8094" size={32} />
-        ) : (
-            <AiOutlineHeart color="#EE8094" size={32} />
-        );
-    }
+
+export default function SocialPosts({  }) {
+    // {
+    //     favorite ? (
+    //         <AiFillHeart color="#EE8094" size={32} />
+    //     ) : (
+    //         <AiOutlineHeart color="#EE8094" size={32} />
+    //     );
+    // }
 
     return (
         <section className={Styles.container}>

@@ -1,6 +1,6 @@
 import BoxHero from "./Components/organisms/BoxHero/BoxHero";
 import PlanBudget from "./Components/organisms/PlanBudget/PlanBudget";
-import SocialPostsReal from "./Components/organisms/SocialPostsReal/SocialPostsReal";
+import SocialPosts from "./Components/organisms/SocialPosts/SocialPosts";
 import WorkSection from "./Components/organisms/WorkSection/WorkSection";
 
 export default function Home() {
@@ -9,7 +9,7 @@ export default function Home() {
             <BoxHero />
             <PlanBudget />
             <WorkSection />
-            <SocialPostsReal />
+            <SocialPosts />
         </>
     );
 }

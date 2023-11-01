@@ -17,4 +17,15 @@
         max-width: 312px;
         max-height: 431px;
     }
+
+    &--favorite {
+        @media (min-width: $mdBreakpoint){
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    @media (min-width: $xlBreakpoint){
+        grid-template-columns: repeat(4,1.5fr);
+    }
+    }
 }

@@ -1,20 +1,23 @@
 import Styles from "./postcard.module.scss";
-import FavoriteButton from "../FavoriteButton/FavoriteButton";
+import Star from "../../../assets/img/star.png";
 
 export default function PostCard(props) {
-
-    
     const FavoriteCard = `${Styles.PostCard} ${
-        props.favorite ? Styles["PostCard--favorite"] : ""
+        props.favorite ? Styles["PostCard--favorite"] : Styles["PostCard"]
     }`;
+
     return (
-        <div>
-            <img
-                className={FavoriteCard}
-                src={props.src}
-               
-            />
-            {props.favorite ? <FavoriteButton/> : ""}
+        <div className={FavoriteCard}>
+            {props.favorite ? (
+                <>
+                    <img className={Styles.PostCard__img} src={props.src} />
+                    <div className={Styles.favoriteIcon}>
+                        <img src={Star} />
+                    </div>
+                </>
+            ) : (
+                <img className={Styles.PostCard__img} src={props.src} />
+            )}
         </div>
     );
 }

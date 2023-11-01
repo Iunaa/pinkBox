@@ -2,10 +2,12 @@ import Styles from "./socialcard.module.scss";
 import PostCard from "../../atoms/PostCard/PostCard";
 import SectionText from "../../atoms/SectionText/SectionText";
 
-
-export default function SocialCard({ src, text, favorite}) {
+export default function SocialCard({ src, text, favorite }) {
+    const FavoriteContainer = `${Styles.container} ${
+        favorite ? Styles["container--favorite"] : Styles["container"]
+    }`;
     return (
-        <section className={Styles.container}>
+        <section className={FavoriteContainer}>
             <div className={Styles.content}>
                 <PostCard
                     className={Styles.content__img}
@@ -16,7 +18,6 @@ export default function SocialCard({ src, text, favorite}) {
                     className={Styles.content__text}
                     text={text}
                     fontSize={"socialPosts"}
-                    
                 />
             </div>
         </section>

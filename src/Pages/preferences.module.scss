@@ -17,7 +17,10 @@
     justify-content: space-around;
     margin: 0 auto;
     padding-bottom: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
     gap: 10px;
+    padding-top: 30px;
 
     @media (max-width: 337px) {
         flex-direction: column;

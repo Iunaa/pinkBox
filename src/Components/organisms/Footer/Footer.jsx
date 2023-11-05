@@ -9,8 +9,12 @@ export default function Footer() {
             <div className={Styles.footer__footertop}>
                 <div className={Styles.content}>
                     <div className={Styles.content__logotitle}>
-                        <img className={Styles.content__logoFooter} src={LogoFooter} />
-                        
+                        <a href="#">
+                            <img
+                                className={Styles.content__logoFooter}
+                                src={LogoFooter}
+                            />
+                        </a>
                     </div>
                     <SocialMedia />
                 </div>

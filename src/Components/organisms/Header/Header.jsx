@@ -3,6 +3,7 @@ import Styles from "../Header/header.module.scss";
 import Topbar from "../../../assets/img/Topbar2.png";
 import Logo from "../../../assets/img/LogoFooter.png";
 import ButtonLink from "../../atoms/ButtonLink/ButtonLink";
+import { Link } from "react-router-dom";
 
 export default function Header() {
     return (
@@ -15,7 +16,9 @@ export default function Header() {
                 />
             </div>
             <div className={Styles.content}>
-                <img className={Styles.content__logo} src={Logo} />
+                <Link to={"/"}>
+                    <img className={Styles.content__logo} src={Logo} />
+                </Link>
 
                 <ul className={Styles.content__list}>
                     <li className={Styles.content__element}>This Month</li>

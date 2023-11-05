@@ -38,5 +38,17 @@
                 padding: 18px 28px;
             }
         }
+
+        &--subscribeButton {
+            padding: 5px 22px 5px 22px;
+
+            @media (min-width: $mdBreakpoint) {
+                padding: 15px 42px;
+            }
+
+            @media (min-width: $xlBreakpoint){
+                
+            }
+        }
     }
 }

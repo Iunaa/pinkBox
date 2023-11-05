@@ -8,9 +8,29 @@ import underline2 from "../../../assets/img/underline2.png";
 import WorkCard from "../../molecules/WorkCard/WorkCard";
 import ButtonLink from "../../atoms/ButtonLink/ButtonLink";
 import { useNavigate } from "react-router-dom";
+import { useState, useEffect } from "react";
 
 export default function WorkSection() {
     const navigate = useNavigate();
+    const [windowSize, setWindowSize] = useState({
+        width: window.innerWidth,
+        height: window.innerHeight,
+    });
+
+    useEffect(() => {
+        const handleResize = () => {
+            setWindowSize({
+                width: window.innerWidth,
+                height: window.innerHeight,
+            });
+        };
+
+        window.addEventListener("resize", handleResize);
+
+        return () => {
+            window.removeEventListener("resize", handleResize);
+        };
+    }, []);
 
     return (
         <section className={Styles.container}>
@@ -38,7 +58,7 @@ export default function WorkSection() {
                 </div>
                 <div className={Styles.container__Card2}>
                     <WorkCard
-                        src={work4}
+                        src={windowSize.width >= 768 ? work4 : work2}
                         title={"Review your\n custom box"}
                         titleSize={"titlesize"}
                         text={

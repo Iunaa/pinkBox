@@ -1,8 +1,7 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import Styles from "./selectcomponent.module.scss";
-import ButtonLink from "../ButtonLink/ButtonLink";
+
 import ButtonLinkColor from "../ButtonLinkColor/ButtonLinkColor";
-import CardImage from "../CardImage/CardImage";
 
 export default function SelectComponent() {
     // Aqui iniciamos o state dos selects vazios pra podermos acessar depois
@@ -30,11 +29,6 @@ export default function SelectComponent() {
             [name]: value,
         }));
     };
-
-    // Coloquei isso pra ver no console os estados mudando conforme seleciona
-    useEffect(() => {
-        console.table(selectState);
-    }, [selectState]);
 
     const renderSelect = () => {
         switch (selectState.productType) {
@@ -126,8 +120,10 @@ export default function SelectComponent() {
             {renderSelect()}
 
             <ButtonLinkColor
-                className={`${Styles.container__btnLink} typography--btnPinkBorder`}
-                label="Subscribe Now"
+                className={`${Styles.container__btnLink}  typography--btnPinkBorder`}
+                label="Subscribe Now "
+                isSubscribe={true}
+                onClick={() => alert("Thanks for subscribe!")}
             />
         </div>
     );

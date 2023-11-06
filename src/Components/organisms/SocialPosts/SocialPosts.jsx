@@ -1,4 +1,4 @@
-import Styles from "../SocialPosts/socialPosts.module.scss";
+import Styles from "./socialPosts.module.scss";
 import ButtonLinkColor from "../../atoms/ButtonLinkColor/ButtonLinkColor";
 import img1 from "../../../assets/img/img1.png";
 import img2 from "../../../assets/img/img2.png";

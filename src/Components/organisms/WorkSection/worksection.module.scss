@@ -3,8 +3,6 @@
     flex-direction: column;
     padding-top: 90px;
 
-    
-
     &__underline {
         max-width: 310px;
         padding-left: 30px;
@@ -60,6 +58,7 @@
 
         @media (min-width: $mdBreakpoint) {
             padding: 14px 32px 14px 32px;
+            margin-bottom: 90px;
         }
 
         @media (min-width: $xlBreakpoint) {

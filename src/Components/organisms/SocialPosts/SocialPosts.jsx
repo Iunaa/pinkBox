@@ -18,7 +18,7 @@ export default function SocialPosts() {
                         src={img1}
                         text={"How to rock the lip look that turns heads"}
                         large={true}
-                        favorite={false}
+                        favorite={true}
                     />
 
                     <SocialCard

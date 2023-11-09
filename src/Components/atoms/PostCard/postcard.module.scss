@@ -10,7 +10,7 @@
         width: 100%;
         max-width: 312px;
         object-fit: cover;
-        position: relative;
+        // position: relative;
     }
 
     &--favorite {
@@ -22,6 +22,6 @@
         max-width: 648px;
         object-fit: cover;
         max-height: 431px;
-        position: absolute;
+        // position: absolute;
     }
 }

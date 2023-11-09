@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Styles from "./selectcomponent.module.scss";
 
 import ButtonLinkColor from "../ButtonLinkColor/ButtonLinkColor";
@@ -29,6 +29,10 @@ export default function SelectComponent() {
             [name]: value,
         }));
     };
+
+    useEffect(() => {
+        console.table(selectState);
+    }, [selectState]);
 
     const renderSelect = () => {
         switch (selectState.productType) {

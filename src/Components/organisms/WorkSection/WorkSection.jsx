@@ -11,26 +11,26 @@ import { useNavigate } from "react-router-dom";
 import { useState, useEffect } from "react";
 
 export default function WorkSection() {
-    const navigate = useNavigate();
-    const [windowSize, setWindowSize] = useState({
-        width: window.innerWidth,
+    const navigate = useNavigate();   //Para poder mudar a rota do button
+    const [windowSize, setWindowSize] = useState({     //gerenciar o tamanho da janela do navegador
+        width: window.innerWidth,    //inner é a parte interna do navegador
         height: window.innerHeight,
     });
 
-    useEffect(() => {
-        const handleResize = () => {
+    useEffect(() => {                
+        const handleResize = () => {    //função para alterar o tamanho da janela
             setWindowSize({
                 width: window.innerWidth,
                 height: window.innerHeight,
             });
         };
 
-        window.addEventListener("resize", handleResize);
+        window.addEventListener("resize", handleResize); //Adiciona um "ouvinte" para verificar quando a janela é redimensionada. Tem 2 paramentos (açao que aguardamos, a funçao que queremos executar quando aquilo acontecer)
 
-        return () => {
+        return () => {         //O return dentro do useEffect serve para quando o componente for desmontado (vai tirar o "ouvinte" que colocamos)
             window.removeEventListener("resize", handleResize);
         };
-    }, []);
+    }, []); // Quando os colchetes estiverem vazios o useEffect executa quando o componente renderiza
 
     return (
         <section className={Styles.container}>
@@ -58,7 +58,7 @@ export default function WorkSection() {
                 </div>
                 <div className={Styles.container__Card2}>
                     <WorkCard
-                        src={windowSize.width >= 768 ? work4 : work2}
+                        src={windowSize.width >= 768 ? work4 : work2}  //Quando width for maior ou igual a 768 exibe a work4, se não exibe work2
                         title={"Review your\n custom box"}
                         titleSize={"titlesize"}
                         text={

@@ -19,6 +19,7 @@
         font-weight: 400;
         line-height: normal;
         letter-spacing: 0.22px;
+        // max-width: 315px;
 
         @media (min-width: $mdBreakpoint) {
             font-size: 20px;
@@ -79,7 +80,6 @@
 
         @media (min-width: $xlBreakpoint) {
             font-size: 26px;
-        
         }
     }
 }
